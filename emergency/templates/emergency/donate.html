@@ -1,0 +1,52 @@
+{% extends 'emergency/base.html' %}
+{% load static %}
+
+{% block title %}Donate us {% endblock title %}
+{% block body %}
+
+<!-- Modal -->
+<style>
+     body {
+         background-color: #f4f4f4;
+     }
+
+     .container {
+         text-align: center;
+         margin-top: 100px;
+     }
+
+     .qr-code {
+         max-width: 300px;
+         margin-bottom: 20px;
+     }
+
+     .btn-donate {
+         background-color: #007bff;
+         color: #fff;
+         border: none;
+     }
+
+     .btn-donate:hover {
+         background-color: #0056b3;
+     }
+
+     .thank-you {
+         font-size: 24px;
+         font-weight: bold;
+     }
+ </style>
+<div class="container">
+     <h1>Donate to Support Our Cause</h1>
+     <p>Your generous contribution helps us continue our mission and make a difference.</p>
+     <!-- Display your UPI QR code image -->
+     <img src="{% static '2.jpg' %}" alt="UPI QR Code" class="qr-code img-fluid">
+     <!-- Thank you message -->
+     <!-- Bigger "Thank You" message with more words -->
+     <p class="thank-you">Thank You for Your Generous Contribution! Your Support Makes a Tremendous Difference and Helps Us Continue Our Mission to Save Lives. We Are Grateful for Your Kindness and Generosity.</p>
+
+     <!-- Donation button -->
+     {% comment %} <button class="btn btn-donate">Donate Now</button> {% endcomment %}
+ </div>
+ 
+
+{% endblock body %}

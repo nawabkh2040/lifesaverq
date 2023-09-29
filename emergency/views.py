@@ -13,3 +13,6 @@ def contact(request):
 
 def about_me(request):
      return render(request, 'emergency/about_me.html')
+
+def donate(request):
+     return render(request, 'emergency/donate.html')

@@ -7,6 +7,9 @@
     <!-- Include Bootstrap CSS from a CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS for styling -->
+    
+</head>
+<body>
     <style>
         body {
             background-color: #f8f9fa;
@@ -65,8 +68,6 @@
             }
         }
     </style>
-</head>
-<body>
     <!-- Bootstrap Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" style="color: whitesmoke;" href="/">Life Saver QR</a>
@@ -97,6 +98,35 @@
     <!-- Page content goes here -->
     {% block body %}{% endblock body %}
 
+    <!-- Page content -->
+    <div class="container">
+        <h1>Donate Us</h1>
+        <p>Your support is greatly appreciated! By donating to Life Saver QR, you contribute to our mission of enhancing emergency response and saving lives. Your generous donation will help us improve and expand our services.</p>
+        
+        <h2>How to Donate</h2>
+        <p>To make a donation, please use one of the following methods:</p>
+        
+        <h3>1. Online Donation</h3>
+        <p>You can donate securely online by clicking the button below:</p>
+        <a href="/Donate-us/" class="btn btn-primary">Donate Online</a>
+        
+        <!-- <h3>2. Bank Transfer</h3>
+        <p>You can also make a donation via bank transfer using the following details:</p>
+        <p>Bank Name: [Bank Name]</p>
+        <p>Account Name: [Account Name]</p>
+        <p>Account Number: [Account Number]</p>
+        <p>Reference: [Your Name]</p> -->
+        
+        <h3 class="my-2" >2. Contact Us</h3>
+        <p>If you have any questions or need assistance with your donation, please <a href="/contact-us/">contact us</a>. We are here to help!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; {% now "Y" %} Life Saver QR | <a href="/Donate-us/">Donate Us</a></p>
+        </div>
+    </footer>
     <!-- Include Bootstrap JS and jQuery from a CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

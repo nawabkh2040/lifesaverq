@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name="Home"),
     path('Privacy-Policy/',views.privacy_Policy,name="privacy-Policy"),
+    path('Donate-us/',views.donate,name="Donate"),
     path('Contact-us/',views.contact,name="Contact us"),
     path('About-us/',views.about_me,name="About me"),
     path('qr-code/',include('emergencyapp.urls'))
