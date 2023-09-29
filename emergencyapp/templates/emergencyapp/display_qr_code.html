@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <!-- Include Bootstrap CSS from a CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .qr-code-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">QR Code</h2>
+        <div class="qr-code-container">
+            <img src="data:image/png;base64,{{ qr_code_data }}" alt="QR Code" class="img-fluid mx-auto d-block" style="max-width: 300px;">
+            <h3 style="text-align: center;color: red;" >In The Case of Emergency Please Scan it.</h3>
+        </div>
+        <div class="text-center mt-3">
+            <p><a href="data:image/png;base64,{{ qr_code_data }}" download class="btn btn-primary">Download QR Code</a></p>
+            <a href="/qr-code/"><button class="btn btn-secondary">Back</button></a>
+        </div>
+    </div>
+    <!-- Include Bootstrap JS and jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
